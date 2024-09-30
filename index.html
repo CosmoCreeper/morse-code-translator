@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morse Code Translator</title>
+    <link href="styles.css" rel="stylesheet"/>
+</head>
+<body>
+    <h1>Morse Code Translator</h1>
+    <select id="select" onchange="updateValue()">
+        <option value="null" selected disabled>Please select</option>
+        <option value="morse">Morse-to-Alphabet</option>
+        <option value="letter">Alphabet-to-Morse</option>
+    </select>
+    <div class="textarea-grid">
+        <textarea id="one" onchange="update()"></textarea>
+        <textarea id="two"></textarea>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Morse</th>
+                <th>Letter</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+        </tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>

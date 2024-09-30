@@ -1,0 +1,68 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bitter:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    text-align: center;
+}
+
+h1 {
+    font-family: "Barlow";
+    font-weight: 500;
+}
+
+.textarea-grid {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 50vw;
+}
+
+textarea {
+    height: 90px;
+    border-radius: 10px;
+    padding: 10px;
+    resize: none;
+    min-width: 100px;
+    border: 1px solid rgb(126, 126, 126);
+}
+
+textarea:hover, textarea:focus {
+    outline: 2px solid orange;
+}
+
+textarea:nth-of-type(2) {
+    margin-left: 10px;
+}
+
+select {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 4px;
+}
+
+table {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 300px;
+    overflow-y: scroll;
+    display: block;
+}
+
+th {
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 5px;
+}
+
+th:nth-last-of-type(1) {
+    border-right: none;
+}
+
+td {
+    padding: 4px;
+    border: 1px solid #dddddd;
+}
